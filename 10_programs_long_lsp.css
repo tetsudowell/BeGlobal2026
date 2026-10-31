@@ -1,0 +1,89 @@
+@import url("/09_programs_short_gogaku.css");
+
+.long-lsp-page .language-hero-copy {
+  background:
+    linear-gradient(rgba(16, 27, 77, 0.78), rgba(8, 15, 46, 0.86)),
+    url("https://tetsudowell.github.io/beglobal_edit/design/images/Carousel/photo01.png")
+      center / cover;
+}
+
+.long-lsp-page .language-hero h1 {
+  font-size: clamp(35px, 10vw, 52px);
+}
+
+.long-lsp-page .language-hero h1 small {
+  display: block;
+  margin-top: 12px;
+  color: #a77bd8;
+  font-size: 0.62em;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+}
+
+.long-lsp-page .course-details {
+  display: flex;
+  align-items: center;
+}
+
+.long-lsp-page .course-details > div {
+  width: 100%;
+}
+
+.lsp-inquiry {
+  max-width: 1080px;
+  margin: 52px 0 0 auto;
+  padding: 30px 24px;
+  color: var(--white);
+  background: var(--navy);
+  border-left: 7px solid var(--yellow);
+}
+
+.lsp-inquiry > span {
+  color: var(--yellow);
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.lsp-inquiry p {
+  margin: 14px 0 20px;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.lsp-inquiry div {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.lsp-inquiry a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .long-lsp-page .language-hero h1 {
+    font-size: clamp(42px, 5.2vw, 72px);
+  }
+
+  .lsp-inquiry {
+    padding: 40px 46px;
+  }
+
+  .lsp-inquiry p {
+    font-size: 20px;
+  }
+
+  .lsp-inquiry div {
+    gap: 28px;
+    flex-direction: row;
+  }
+}

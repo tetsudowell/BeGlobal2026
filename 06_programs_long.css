@@ -1,0 +1,55 @@
+@import url("/05_programs_short.css");
+
+.long-programs-page .short-hero-copy {
+  background:
+    linear-gradient(rgba(16, 27, 77, 0.78), rgba(8, 15, 46, 0.86)),
+    url("https://tetsudowell.github.io/beglobal_edit/design/images/Carousel/photo05.png")
+      center / cover;
+}
+
+.long-programs-page .faculty-note {
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  color: var(--ink);
+  background: var(--yellow);
+  border-top: 5px solid var(--navy);
+  border-bottom: 1px solid rgba(16, 16, 16, 0.28);
+}
+
+.long-programs-page .faculty-note > span {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 32px;
+  align-items: center;
+  padding: 7px 12px;
+  color: var(--white);
+  background: var(--navy);
+  font-size: 10px;
+}
+
+.long-programs-page .faculty-note p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.long-programs-page .faculty-note strong {
+  padding: 1px 5px 3px;
+  color: var(--white);
+  background: #7541a8;
+}
+
+.long-programs-page .short-hero h1 {
+  font-size: clamp(40px, 12vw, 58px);
+}
+
+.long-programs-page .short-program-heading h2 {
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .long-programs-page .short-hero h1 {
+    font-size: clamp(50px, 6.4vw, 88px);
+  }
+}

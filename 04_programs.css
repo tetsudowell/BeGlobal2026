@@ -1,0 +1,470 @@
+.programs-page .site-header {
+  color: var(--ink);
+  background: rgba(243, 241, 233, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.programs-page main {
+  padding-top: 72px;
+}
+
+.programs-hero {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.programs-hero-copy {
+  padding: 64px var(--page-padding) 56px;
+  background:
+    linear-gradient(rgba(16, 27, 77, 0.78), rgba(8, 15, 46, 0.86)),
+    url("https://tetsudowell.github.io/beglobal_edit/design/images/Carousel/photo03.png")
+      center / cover;
+}
+
+.programs-eyebrow,
+.programs-page-number,
+.scholarship-copy > p,
+.directory-card > div > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.programs-eyebrow {
+  margin: 0 0 38px;
+  color: var(--yellow);
+  font-size: 10px;
+}
+
+.programs-eyebrow::before {
+  display: inline-block;
+  width: 34px;
+  height: 2px;
+  margin: 0 12px 4px 0;
+  background: currentColor;
+  content: "";
+}
+
+.programs-page-number {
+  margin: 0 0 16px;
+  font-size: 9px;
+}
+
+.programs-page-number span {
+  margin-left: 10px;
+  color: var(--yellow);
+}
+
+.programs-hero h1 {
+  margin: 0;
+  font-size: clamp(40px, 12vw, 58px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.06em;
+}
+
+.programs-hero-media {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.programs-hero-media::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(8, 15, 46, 0.62), transparent 70%);
+  content: "";
+}
+
+.programs-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.programs-hero-media > p {
+  position: absolute;
+  z-index: 1;
+  right: var(--page-padding);
+  bottom: 22px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.program-overview,
+.program-directory {
+  padding: 76px var(--page-padding);
+}
+
+.programs-section-heading {
+  display: grid;
+  gap: 42px;
+  max-width: 1320px;
+  margin: 0 auto 58px;
+}
+
+.programs-section-heading h2 {
+  margin: 0;
+  font-size: clamp(34px, 10vw, 52px);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -0.055em;
+}
+
+.programs-section-heading h2 small {
+  display: block;
+  margin-top: 14px;
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.overview-body {
+  max-width: 1080px;
+  margin: 0 0 0 auto;
+}
+
+.overview-figure {
+  position: relative;
+  margin: 0;
+  padding: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.overview-figure::before {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 14px;
+  width: 46px;
+  height: 6px;
+  background: var(--yellow);
+  content: "";
+}
+
+.overview-figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.overview-description {
+  margin: 28px 0 0;
+  color: #393939;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.scholarship {
+  display: grid;
+  max-width: 1080px;
+  margin: 64px 0 0 auto;
+  color: var(--white);
+  background: var(--navy);
+}
+
+.scholarship-copy {
+  padding: 38px var(--page-padding) 42px;
+}
+
+.scholarship-copy > p {
+  margin: 0 0 14px;
+  color: var(--yellow);
+  font-size: 9px;
+}
+
+.scholarship-copy h2 {
+  margin: 0 0 18px;
+  font-size: clamp(26px, 8vw, 40px);
+  line-height: 1.35;
+}
+
+.scholarship-copy span {
+  display: block;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.scholarship-media {
+  min-height: 230px;
+}
+
+.scholarship-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.program-directory {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.directory-heading h2 {
+  color: var(--white);
+}
+
+.directory-grid {
+  display: grid;
+  max-width: 1320px;
+  gap: 1px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.directory-card {
+  position: relative;
+  display: grid;
+  min-height: 340px;
+  grid-template-rows: auto 1fr;
+  padding: 28px var(--page-padding);
+  overflow: hidden;
+  background: #172461;
+}
+
+.directory-card-yellow {
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.directory-card-search {
+  background: var(--deep-navy);
+}
+
+.directory-index {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.directory-card > div {
+  align-self: end;
+  padding-right: 50px;
+}
+
+.directory-card > div > p {
+  margin: 0 0 12px;
+  color: var(--yellow);
+  font-size: 8px;
+}
+
+.directory-card-yellow > div > p {
+  color: var(--navy);
+}
+
+.directory-card h3 {
+  margin: 0;
+  font-size: clamp(30px, 9vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.directory-card h3 small {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.directory-card ul {
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directory-card li {
+  position: relative;
+  padding: 5px 0 5px 15px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.directory-card-yellow li {
+  color: rgba(16, 16, 16, 0.72);
+}
+
+.directory-card li::before {
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+  content: "–";
+}
+
+.directory-card-yellow li::before {
+  color: var(--navy);
+}
+
+.directory-card-search > div > span {
+  display: block;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+.directory-arrow {
+  position: absolute;
+  right: var(--page-padding);
+  bottom: 28px;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  place-items: center;
+  transition:
+    color 0.2s,
+    background 0.2s,
+    transform 0.2s;
+}
+
+.directory-arrow svg,
+.programs-back-link svg {
+  width: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.directory-card:hover .directory-arrow {
+  color: var(--ink);
+  background: var(--white);
+  transform: translateX(4px);
+}
+
+.directory-card-yellow:hover .directory-arrow {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.programs-back-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 42px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .programs-page main {
+    padding-top: 92px;
+  }
+
+  .programs-hero {
+    display: grid;
+    min-height: 620px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  }
+
+  .programs-hero-copy {
+    display: flex;
+    padding: clamp(76px, 9vw, 132px) var(--page-padding);
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .programs-eyebrow {
+    margin-bottom: 56px;
+    font-size: 11px;
+  }
+
+  .programs-page .programs-hero h1 {
+    font-size: clamp(46px, 6.2vw, 90px);
+  }
+
+  .programs-hero-media {
+    height: auto;
+    min-height: 540px;
+  }
+
+  .program-overview,
+  .program-directory {
+    padding: clamp(90px, 11vw, 160px) var(--page-padding);
+  }
+
+  .programs-section-heading {
+    grid-template-columns: minmax(150px, 0.55fr) 2fr;
+    gap: 6vw;
+    margin-bottom: clamp(58px, 7vw, 94px);
+  }
+
+  .programs-section-heading h2 {
+    font-size: clamp(38px, 4.8vw, 66px);
+  }
+
+  .overview-figure {
+    padding: 22px;
+  }
+
+  .overview-description {
+    max-width: 850px;
+    margin-top: 36px;
+  }
+
+  .scholarship {
+    grid-template-columns: 1.05fr 0.95fr;
+    margin-top: 86px;
+  }
+
+  .scholarship-copy {
+    display: flex;
+    padding: clamp(42px, 6vw, 72px);
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .directory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .directory-card {
+    min-height: 390px;
+    padding: clamp(30px, 4vw, 48px);
+  }
+
+  .directory-card-search {
+    grid-column: 1 / -1;
+    min-height: 310px;
+  }
+
+  .directory-card > div {
+    padding-right: 70px;
+  }
+
+  .directory-card h3 {
+    font-size: clamp(32px, 4vw, 52px);
+  }
+
+  .directory-arrow {
+    right: clamp(26px, 3vw, 42px);
+    bottom: clamp(30px, 4vw, 46px);
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .directory-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .directory-card-search {
+    grid-column: auto;
+    min-height: 430px;
+  }
+}
